@@ -1,8 +1,7 @@
 <h1>CodeBook for Tidying the UCI HAR Dataset</h1>
 
 <h2>Background</h2>
-
-<p>This CodeBook describes the data, the variables and any transformations or work that was performed using script run_Analysis.R to clean up the UCI HAR Dataset and produce a tidy flat text called "tidy_data.txt" that can be read using a data.table for further analysis."</p>
+<p>This CodeBook describes the data, the variables and transformations that were performed using script run_Analysis.R to clean up the UCI HAR Dataset and produce a tidy flat text called "tidy_data.txt" that can be read using a data.table for further analysis."</p>
 
 <p>The UCI HAR Dataset represents data collected from the accelerometers from the Samsung Galaxy S smarthphone. The original data and full description is available at this link <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">UCI HAR Dataset</a>.</p>"
 
@@ -20,22 +19,22 @@
 <li>An identifier of the subject who carried out the experiment.</li>
 </ul>
 
-<p>The run_Analysis.R script extracts a subset of the original data that contain the mean and standard deviation features for each of 33 processed signals.  This subset contains 66 features out of the original 561 original features. There are 10299 observations with 68 variables (includes the 66 extracted features, and additional subject and activity).</p>
+<p>The run_Analysis.R script extracts a subset of the original data that contain the mean and standard deviation features for each of 33 processed signals.  This reduced data subset contains 66 features out of the original 561 original features. There are 10299 observations with 68 variables (includes the 66 extracted features, the subject identifier and activity label).</p>
 
-<p>The data subset is further reduced by calculating the mean of the observations that is grouped by subject and activity pair, thus resulting in 180 observations (30 subjects x 6 activities) and 68 variables. This final tidy dataset "tidy_data.txt"is saved as a text file in the current working directory.</p>
+<p>The data subset is further reduced by calculating the mean of the observations that is grouped by subject and activity pair, thus resulting in 180 observations (30 subjects x 6 activities) on 68 variables. This final tidy dataset "tidy_data.txt" can be obtained by running the R script run_Analysis.R which saves the ouptut in the current working directory.</p>
 
 <h2>Filtering and renaming of variable names</h2>
 
 <p>The tidying of the data involved using the following steps to filter and use more meaningful variable names</p> 
 
-<p>filtered_names <- features[filtered_feature_ids]</p>
-<p>filtered_names <- gsub("\\(\\)", "", filtered_names)</p>
-<p>filtered_names <- gsub("Acc", "-acceleration", filtered_names)</p>
-<p>filtered_names <- gsub("Mag", "-Magnitude", filtered_names)</p>
-<p>filtered_names <- gsub("BodyBody", "Body", filtered_names)</p>
-<p>filtered_names <- gsub("(Jerk|Gyro)", "-\\1", filtered_names)</p>
-<p>filtered_names <- gsub("^t(.*)$", "\\1-time", filtered_names)</p>
-<p>filtered_names <- gsub("^f(.*)$", "\\1-frequency", filtered_names)</p>
+<p>filtered_names <- features[filtered_feature_ids] </p>
+<p>filtered_names <- gsub("\\(\\)", "", filtered_names) </p>
+<p>filtered_names <- gsub("Acc", "-acceleration", filtered_names) </p>
+<p>filtered_names <- gsub("Mag", "-Magnitude", filtered_names) </p>
+<p>filtered_names <- gsub("BodyBody", "Body", filtered_names) </p>
+<p>filtered_names <- gsub("(Jerk|Gyro)", "-\\1", filtered_names) </p>
+<p>filtered_names <- gsub("^t(.*)$", "\\1-time", filtered_names) </p>
+<p>filtered_names <- gsub("^f(.*)$", "\\1-frequency", filtered_names) </p>
 
 <h2>Variable Names in the tidy data</h2>
 
