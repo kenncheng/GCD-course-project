@@ -25,17 +25,19 @@
 
 <h2>Filtering and renaming of variable names</h2>
 
-<p>The tidying of the data involved using the following steps to filter and use more meaningful variable names</p> 
+<p>The tidying of the data involved using the "gsub" and "tolower" functions to filter and use more meaningful variable names</p> 
 
-<p>Use gsub and tolower functions for transforming more meaningful variable names</p>
-<p>gsub("\\(\\)", "", filtered_names)</p>
-<p>gsub("Acc", "-acceleration", filtered_names)</p>
-<p>gsub("Mag", "-Magnitude", filtered_names)</p>
-<p>gsub("BodyBody", "Body", filtered_names)</p>
-<p>gsub("(Jerk|Gyro)", "-\\1", filtered_names)</p>
-<p>gsub("^t(.*)$", "\\1-time", filtered_names)</p>
-<p>gsub("^f(.*)$", "\\1-frequency", filtered_names)</p>
-<p>tolower(filtered_names)</p>
+<ul>
+<li>Use gsub and tolower functions for transforming more meaningful variable names</p>
+<li>gsub("\\(\\)", "", filtered_names)</li>
+<li>gsub("Acc", "-acceleration", filtered_names)</li>
+<li>gsub("Mag", "-Magnitude", filtered_names)</li>
+<li>gsub("BodyBody", "Body", filtered_names)</li>
+<li>gsub("(Jerk|Gyro)", "-\\1", filtered_names)</li>
+<li>gsub("^t(.*)$", "\\1-time", filtered_names)</li>
+<li>gsub("^f(.*)$", "\\1-frequency", filtered_names)</li>
+<li>tolower(filtered_names)</li>
+</ul>
 
 <h2>Variable Names in the tidy data</h2>
 
