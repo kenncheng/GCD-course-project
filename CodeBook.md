@@ -5,9 +5,9 @@
 
 <p>The UCI HAR Dataset represents data collected from the accelerometers from the Samsung Galaxy S smarthphone. The original data and full description is available at this link <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">UCI HAR Dataset</a>.</p>"
 
-<p>As mentioned in the README.txt file that came with original data, the data comes from experiments that have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.</p>
+<p>According to the README.txt file that came with original data, the data comes from experiments that have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.</p>
 
-<p>The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.</p>
+<p>The README.txt file that came with the original data also said that the sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.</p>
 
 <p>For each record in the dataset, there contains:</p>
 
@@ -37,12 +37,12 @@
 <p>The activity labels have the following possible values:</h3>
 
 <ul>
-<li>'laying'</li>
-<li>'sitting'</li>
-<li>'standing'</li>
-<li>'walking'</li>
-<li>'walking_downstairs'</li>
-<li>'walking_upstairs'</li>
+<li>"laying"</li>
+<li>"sitting"</li>
+<li>"standing"</li>
+<li>"walking"</li>
+<li>"walking_downstairs"</li>
+<li>"walking_upstairs"</li>
 </ul>
 
 <h3>measurement</h3>
