@@ -23,20 +23,6 @@
 
 <p>The data subset is further reduced by calculating the mean of the observations that is grouped by subject and activity pair, thus resulting in 180 observations (30 subjects x 6 activities) on 68 variables. This final tidy dataset "tidy_data.txt" can be obtained by running the R script run_Analysis.R which saves the ouptut in the current working directory.</p>
 
-<h2>Filtering and renaming of variable names</h2>
-
-<p>The tidying of the data involved using the following sequence of "gsub" and "tolower" functions to filter and use more meaningful variable names:</p> 
-
-<ul>
-<li>gsub("\\(\\)", "", filtered_names)</li>
-<li>gsub("Acc", "-acceleration", filtered_names)</li>
-<li>gsub("Mag", "-Magnitude", filtered_names)</li>
-<li>gsub("BodyBody", "Body", filtered_names)</li>
-<li>gsub("(Jerk|Gyro)", "-\\1", filtered_names)</li>
-<li>gsub("^t(.*)$", "\\1-time", filtered_names)</li>
-<li>gsub("^f(.*)$", "\\1-frequency", filtered_names)</li>
-<li>tolower(filtered_names)</li>
-</ul>
 
 <h2>Variable Names in the tidy data</h2>
 
