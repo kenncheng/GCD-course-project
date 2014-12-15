@@ -134,7 +134,7 @@
 
 <h3>mean</h3>
 
-<p>The mean of the feature measurements</p>
+<p>The mean of the feature measurements by subject and activity pair</p>
 
 
 
