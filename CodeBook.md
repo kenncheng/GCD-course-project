@@ -25,10 +25,9 @@
 
 <h2>Filtering and renaming of variable names</h2>
 
-<p>The tidying of the data involved using the "gsub" and "tolower" functions to filter and use more meaningful variable names</p> 
+<p>The tidying of the data involved using the following sequence of "gsub" and "tolower" functions to filter and use more meaningful variable names</p> 
 
 <ul>
-<li>Use gsub and tolower functions for transforming more meaningful variable names</p>
 <li>gsub("\\(\\)", "", filtered_names)</li>
 <li>gsub("Acc", "-acceleration", filtered_names)</li>
 <li>gsub("Mag", "-Magnitude", filtered_names)</li>
