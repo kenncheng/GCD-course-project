@@ -51,12 +51,12 @@
 <p>The activity labels have the following possible values:</h3>
 
 <ul>
-<li>'laying'.</li>
-<li>'sitting'.</li>
-<li>'standing'.</li>
-<li>'walking'.</li>
-<li>'walking_downstairs'.</li>
-<li>'walking_upstairs'.</li>
+<li>'laying'</li>
+<li>'sitting'</li>
+<li>'standing'</li>
+<li>'walking'</li>
+<li>'walking_downstairs'</li>
+<li>'walking_upstairs'</li>
 </ul>
 
 <h3>measurement</h3>
