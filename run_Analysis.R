@@ -43,7 +43,7 @@ for (i in 1:nrow(activities)) {
 # ------------------------------------------------------------------------------
 # Part 4 - Appropriately labels the data set with descriptive variable names.
 # ------------------------------------------------------------------------------
-filtered_names <- features[filtered_feature_ids]
+filtered_names <- features[filtered_feature_index]
 filtered_names <- gsub("\\(\\)", "", filtered_names)
 filtered_names <- gsub("Acc", "-acceleration", filtered_names)
 filtered_names <- gsub("Mag", "-Magnitude", filtered_names)
