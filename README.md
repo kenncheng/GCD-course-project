@@ -32,7 +32,7 @@
 
 <p>Descriptive activity names were assigned to the activities in the resulting dataset.</p>
 
-<p>The appropriate labelling of the data set with descriptive variables were done using the following sequence of "gsub" and "tolower" functions to filter and use more meaningful variable names:</p> 
+<p>The appropriate labelling of the data set with descriptive variables were done using a sequence of "gsub" and "tolower" functions to filter and use more meaningful variable names.</p> 
 
 <p>A table frame was created and summarized by the mean function on the measurements, by subject and activity.</p>
 
