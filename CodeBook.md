@@ -27,6 +27,8 @@
 
 <p>The tidying of the data involved using the following steps to filter and use more meaningful variable names</p> 
 
+<img src="/Users/admin/Desktop/filter_code.jpg" alt="alt text" title=Title" />
+"
 <p>filtered_names <- features[filtered_feature_ids]</p>
 <p>filtered_names <- gsub("\\(\\)", "", filtered_names)</p>
 <p>filtered_names <- gsub("Acc", "-acceleration", filtered_names)</p>
