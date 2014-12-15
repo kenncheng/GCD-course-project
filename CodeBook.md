@@ -25,7 +25,7 @@
 
 <h2>Filtering and renaming of variable names</h2>
 
-<p>The tidying of the data involved using the following sequence of "gsub" and "tolower" functions to filter and use more meaningful variable names</p> 
+<p>The tidying of the data involved using the following sequence of "gsub" and "tolower" functions to filter and use more meaningful variable names:</p> 
 
 <ul>
 <li>gsub("\\(\\)", "", filtered_names)</li>
@@ -44,11 +44,11 @@
 
 <h3>subject</h3>
 
-<p>A numeric identifier from (1-30) of the subject who carried out the experiment.</p>
+<p>A numeric identifier from (1-30) of the subject volunteers who carried out the experiment.</p>
 
 <h3>activity</h3>
 
-<p>The activity labels have the following possible values.</h3>
+<p>The activity labels have the following possible values:</h3>
 
 <ul>
 <li>'laying'.</li>
@@ -61,7 +61,7 @@
 
 <h3>measurement</h3>
 
-<p>The names of the measurement for which the mean is calculated, have the possible 66 values:</p>
+<p>The names of the 66 measurements for which the mean is calculated, by subject and activity:</p>
 
 <ul>
 <li>"body-acceleration-mean-x-time"</li>
